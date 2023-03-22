@@ -1,0 +1,97 @@
+.second-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80vw;
+    min-height: 100vh;
+    padding: 0 15px;
+    scroll-snap-align: start;
+}
+
+.second-section .text-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.text-content .text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-content .text h1 {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 500;
+    opacity: 0;
+    padding: 10px 0;
+}
+
+.second-section.active h1 {
+    animation: show 1s ease .5s forwards;
+}
+
+.text h1 span {
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline-flex;
+    font-family: Varela Round, cursive;
+    font-size: 40px;
+    background: linear-gradient(var(--clr-pri), var(--clr-sec));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    height: 0;
+}
+
+.second-section.active .text-content .text1 h1 span {
+    animation: animate-started 1s ease 2s forwards;
+}
+
+@keyframes animate-started {
+    to {
+        height: 48px;
+    }
+}
+
+.text h1 span::before {
+    background: linear-gradient(var(--clr-pri), var(--clr-sec));
+    bottom: 0;
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 0;
+}
+
+.second-section.active .text h1 span::before {
+    animation: expand 1s ease 1.2s forwards;
+}
+
+.text-content .text1 h2 {
+    border-left: 1px solid rgba(255, 255, 255, .87);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 5px;
+    padding: 20px 15px;
+    position: relative;
+    /* opacity: 0; */
+}
+
+.second-section .progress {
+
+}
