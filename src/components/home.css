@@ -23,7 +23,8 @@
 }
 
 @keyframes glow {
-    0%, 100% {
+    0%,
+    100% {
         filter: saturate(1);
     }
     50% {
@@ -116,6 +117,4 @@
     text-transform: uppercase;
 }
 
-@media (max-width: 850px) {
-    
-}
+@media (max-width: 850px) {}
