@@ -35,19 +35,19 @@ function SecondSection() {
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse quisquam facilis commodi quaerat architecto voluptates nobis possimus modi nam tempora? Dicta, id! Non, sequi nesciunt? Animi possimus ratione repudiandae laborum?
                 </h2>
             </div>
-            <div className="progress">
-                <div className="container" style={{"--x" : 1}}>
-                    <h1>1</h1>
-                    <span>Lorem</span>
-                </div>
-                <div className="container" style={{"--x" : 2}}>
-                    <h1>2</h1>
-                    <span>Lorem</span>
-                </div>
-                <div className="container" style={{"--x" : 3}}>
-                    <h1>3</h1>
-                    <span>Lorem</span>
-                </div>
+        </div>
+        <div className="progress">
+            <div className="container" style={{"--x" : 1}}>
+                <h1>1</h1>
+                <span>Lorem</span>
+            </div>
+            <div className="container" style={{"--x" : 2}}>
+                <h1>2</h1>
+                <span>Lorem</span>
+            </div>
+            <div className="container" style={{"--x" : 3}}>
+                <h1>3</h1>
+                <span>Lorem</span>
             </div>
         </div>
     </div>
